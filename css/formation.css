@@ -1,0 +1,317 @@
+
+/******************************************* section - 1 *************************/
+.prem-sec{
+    height: 15REM;
+    width: 100.2%;
+    position: relative;
+    background-color: #000C2B;
+    text-align: center;
+    z-index: -1;
+    line-height: 9em;
+  }
+  .p1{
+    position: relative;
+    font-size: 60PX;
+    top: 25PX;
+    color: rgb(82, 206, 200);
+  }
+  .soustitle-apropos{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    font-size: 20PX;
+    margin-left: 45%;
+    gap: 15PX;
+    top: 10%;
+    line-height: 100%;
+  }
+  #lien-acceuill{
+    color: rgb(82, 206, 200);
+    text-decoration: none;
+  }
+
+  #lien-acceuill::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(57, 158, 153);
+    transition: all .5s;
+   
+  }
+  #lien-acceuill:hover::before{
+   width: 7%;
+   
+  }
+ 
+  #sous-p{
+    margin-top: -0.3PX;
+    border-left: 2PX solid rgb(82, 206, 200);
+    width: 120PX;
+    color: #93e5e1;
+  }
+
+
+
+   /*************************************************** section 2 ************************/
+.section-2{
+  display: flex;
+  gap: 5%;
+  padding: 10%;
+}
+.card {
+  position: relative;
+  width: 300px;
+  height: 200px;
+
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card img {
+  width: 100%;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+.card:hover img {
+  scale: 0;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+
+
+
+
+
+
+
+   /*************************************************** section 3 ************************/
+
+
+
+
+
+
+
+
+
+/******************************************* section - 3  *************************/
+  
+
+
+  /******************************************************************* media-Query -----  ***************************************************************/
+
+@media (min-width: 300px) {
+
+  /************************ media - section 1 ************************/
+    .prem-sec{
+        height: 15REM;
+        width: 100%;
+        line-height: 9em;
+    }
+    .p1{
+        font-size: 35PX;
+        top: 25PX;
+    }
+    .soustitle-apropos{
+        display: flex;
+        flex-direction: row;
+        font-size: 17PX;
+        top: 10%;
+        line-height: 100%; 
+        margin-left: 40%;
+    }
+    #sous-p{
+        margin-top: -0.3PX;
+        width: 120PX;
+        
+    }
+  
+  
+  /************************ media - section 2 ************************/
+  
+   
+  
+  /************************ media - section 3 ************************/
+  
+
+  
+  /************************ media - section 4 ************************/
+
+
+        }
+      
+   
+  
+  @media (min-width: 600px) {
+  
+    /************************ media - section 1 ************************/
+    .prem-sec{
+        height: 15REM;
+        width: 100%;
+        line-height: 9em;
+      }
+      .p1{
+        font-size: 40PX;
+        top: 25PX;
+      }
+      .soustitle-apropos{
+        display: flex;
+        flex-direction: row;
+        font-size: 17PX;
+        top: 10%;
+        line-height: 100%; 
+        margin-left: 40%;
+      }
+    
+      #sous-p{
+        margin-top: -0.3PX;
+        width: 120PX;
+        
+      }
+  
+  
+  /************************ media - section 2 ************************/
+
+  
+  /************************ media - section 3 ************************/
+ 
+
+  
+  /************************ media - section 4 ************************/
+      
+     
+       
+     
+  }
+  
+  @media (min-width: 768px) {
+  
+    /************************ media - section 1 ************************/
+  
+    .prem-sec{
+        height: 15REM;
+        width: 100%;
+        line-height: 9em;
+      }
+    .p1{
+        font-size: 40PX;
+        top: 25PX;
+      }
+    .soustitle-apropos{
+        display: flex;
+        flex-direction: row;
+        font-size: 17PX;
+        top: 10%;
+        line-height: 100%;
+        margin-left: 40%;
+      }
+    
+    #sous-p{
+        margin-top: -0.3PX;
+        width: 120PX;
+        
+      }
+  
+  /************************ media - section 2 ************************/
+ 
+  /************************ media - section 3 ************************/
+  
+
+  
+  /************************ media - section 4 ************************/
+
+        
+  
+  
+        
+        
+  
+  
+    }
+  
+  @media (min-width: 1024px) {
+  
+  /************************ media - section 1 ************************/
+  .prem-sec{
+    height: 15REM;
+    width: 100.2%;
+    line-height: 9em;
+  }
+  .p1{
+    font-size: 60PX;
+    top: 25PX;
+  }
+  .soustitle-apropos{
+    display: flex;
+    flex-direction: row;
+    font-size: 20PX;
+    top: 10%;
+    line-height: 100%;
+    margin-left: 40%;
+  }
+
+  #sous-p{
+    margin-top: -0.3PX;
+    width: 120PX;
+    
+  }
+  
+  
+  /************************ media - section 2 ************************/
+
+  /************************ media - section 3 ************************/
+  
+
+  
+  /************************ media - section 4 ************************/
+  
+  
+  
+  }
+
+

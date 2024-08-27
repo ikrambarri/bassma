@@ -1,0 +1,624 @@
+
+/******************************************* section - 1 *************************/
+.prem-sec{
+    height: 15REM;
+    width: 100.2%;
+    position: relative;
+    background-color: #000C2B;
+    text-align: center;
+    z-index: -1;
+    line-height: 9em;
+  }
+  .p1{
+    position: relative;
+    font-size: 60PX;
+    top: 25PX;
+    color: rgb(82, 206, 200);
+  }
+  .soustitle-apropos{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    font-size: 20PX;
+    margin-left: 45%;
+    gap: 15PX;
+    top: 10%;
+    line-height: 100%;
+  }
+  #lien-acceuill{
+    color: rgb(82, 206, 200);
+    text-decoration: none;
+  }
+
+  #lien-acceuill::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(57, 158, 153);
+    transition: all .5s;
+   
+  }
+  #lien-acceuill:hover::before{
+   width: 7%;
+   
+  }
+ 
+  #sous-p{
+    margin-top: -0.3PX;
+    border-left: 2PX solid rgb(82, 206, 200);
+    width: 120PX;
+    color: #93e5e1;
+  }
+
+
+
+   /*************************************************** section 2 ************************/
+   .section-2{
+    background: linear-gradient(90deg,#000C2B 0%,#000C2B 30%,#44bcd1 30%,#44bcd1 100%);
+ }
+.contactUs{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+.contactUs .title_contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+
+}
+.contactUs .title_contact h2{
+    color: #fff;
+    font-weight: 500;
+}
+.form{
+    grid-area: form;
+}
+.info{
+    grid-area: info;
+    width: 50%;
+
+}
+.map{
+    grid-area: map;
+    width: 65%;
+}
+.contact{
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0,0.15) ;
+}
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: 
+    "form info"
+    "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.contact h3{
+    color: #0e3959;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+/** form **/
+.formBox{
+    position: relative;
+    width: 100%;
+}
+.formBox .row50{
+    display: flex;
+    gap: 20px;
+}
+
+.inputBox{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.formBox .row100 .inputBox{
+width: 100%;
+}
+.inputBox span{
+    color:rgb(78, 188, 183);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+
+}
+.inputBox input{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+}
+
+.inputBox textarea{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+.inputBox input[type="submit"]{
+    background: #ff578b;
+    color: #fff;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5%;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+.inputBox ::placeholder{
+    color: #999;
+}
+
+/** info **/
+.info{
+    background: #0e3959;
+    
+}
+.info h3{
+    color: #fff;
+    padding:  30px 0px;
+}
+.info .infoBox div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info .infoBox div span{
+    min-width: 30px;
+    height: 30px;
+    color: #fff;
+    background: #18b7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.info .infoBox div p{
+    color: #fff;
+    font-size: 0.9em;
+}
+.info .infoBox div a{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+.sci{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.sci li{
+    list-style: none;
+    margin-right: 15px;
+}
+
+.sci li a{
+    color: #fff;
+    font-size: 1.5em;
+    color: #ccc;
+    cursor: pointer;
+}
+.sci li a:hover{
+    color: #fff;
+}
+.map{
+    padding: 0;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+/******************************************* section - 3  *************************/
+  
+#section-3{
+    position: relative;
+    margin-top: 100em;
+}
+
+  /******************************************************************* media-Query -----  ***************************************************************/
+
+@media (min-width: 300px) {
+
+  /************************ media - section 1 ************************/
+    .prem-sec{
+        height: 15REM;
+        width: 100%;
+        line-height: 9em;
+    }
+    .p1{
+        font-size: 35PX;
+        top: 25PX;
+    }
+    .soustitle-apropos{
+        display: flex;
+        flex-direction: row;
+        font-size: 17PX;
+        top: 10%;
+        line-height: 100%; 
+        margin-left: 40%;
+    }
+    #sous-p{
+        margin-top: -0.3PX;
+        width: 120PX;
+        
+    }
+  
+  
+  /************************ media - section 2 ************************/
+  .section-2{
+    background: #44bcd1;
+}
+.contactUs{
+    padding: 20px;
+}
+.box{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "form" "info" "map";
+}
+
+.formBox .row50{
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+}
+.inputBox{
+    width: 100%;
+}
+.contact{
+    padding: 30px;
+}
+.map{
+    min-height: 300px;
+    padding: 0;
+}
+  
+  /************************ media - section 3 ************************/
+  
+
+  
+  /************************ media - section 4 ************************/
+
+
+        }
+      
+   
+  
+  @media (min-width: 600px) {
+  
+    /************************ media - section 1 ************************/
+    .prem-sec{
+        height: 15REM;
+        width: 100%;
+        line-height: 9em;
+      }
+      .p1{
+        font-size: 40PX;
+        top: 25PX;
+      }
+      .soustitle-apropos{
+        display: flex;
+        flex-direction: row;
+        font-size: 17PX;
+        top: 10%;
+        line-height: 100%; 
+        margin-left: 40%;
+      }
+    
+      #sous-p{
+        margin-top: -0.3PX;
+        width: 120PX;
+        
+      }
+  
+  
+  /************************ media - section 2 ************************/
+
+  
+  /************************ media - section 3 ************************/
+ 
+
+  
+  /************************ media - section 4 ************************/
+      
+     
+       
+     
+  }
+  
+  @media (min-width: 768px) {
+  
+    /************************ media - section 1 ************************/
+  
+    .prem-sec{
+        height: 15REM;
+        width: 100%;
+        line-height: 9em;
+      }
+    .p1{
+        font-size: 40PX;
+        top: 25PX;
+      }
+    .soustitle-apropos{
+        display: flex;
+        flex-direction: row;
+        font-size: 17PX;
+        top: 10%;
+        line-height: 100%;
+        margin-left: 40%;
+      }
+    
+    #sous-p{
+        margin-top: -0.3PX;
+        width: 120PX;
+        
+      }
+  
+  /************************ media - section 2 ************************/
+
+
+
+
+  /************************ media - section 3 ************************/
+  
+
+  
+  /************************ media - section 4 ************************/
+
+        
+  
+  
+        
+        
+  
+  
+    }
+  
+  @media (min-width: 1024px) {
+  
+  /************************ media - section 1 ************************/
+  .prem-sec{
+    height: 15REM;
+    width: 100.2%;
+    line-height: 9em;
+  }
+  .p1{
+    font-size: 60PX;
+    top: 25PX;
+  }
+  .soustitle-apropos{
+    display: flex;
+    flex-direction: row;
+    font-size: 20PX;
+    top: 10%;
+    line-height: 100%;
+    margin-left: 40%;
+  }
+
+  #sous-p{
+    margin-top: -0.3PX;
+    width: 120PX;
+    
+  }
+  
+  
+  /************************ media - section 2 ************************/
+
+  .section-2{
+    background: linear-gradient(90deg,#0e3959 0%,#0e3959 30%,#44bcd1 30%,#44bcd1 100%);
+ }
+.contactUs{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+.contactUs .title_contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+
+}
+.contactUs .title_contact h2{
+    color: #fff;
+    font-weight: 500;
+}
+.form{
+    grid-area: form;
+}
+.info{
+    grid-area: info;
+    width: 50%;
+
+}
+.map{
+    grid-area: map;
+    width: 65%;
+}
+.contact{
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0,0.15) ;
+}
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: 
+    "form info"
+    "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.contact h3{
+    color: #0e3959;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+/** form **/
+.formBox{
+    position: relative;
+    width: 100%;
+}
+.formBox .row50{
+    display: flex;
+    gap: 20px;
+}
+
+.inputBox{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.formBox .row100 .inputBox{
+width: 100%;
+}
+.inputBox span{
+    color:rgb(78, 188, 183);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+
+}
+.inputBox input{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+}
+
+.inputBox textarea{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid #333;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+.inputBox input[type="submit"]{
+    background: #ff578b;
+    color: #fff;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5%;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+.inputBox ::placeholder{
+    color: #999;
+}
+
+/** info **/
+.info{
+    background: #0e3959;
+    
+}
+.info h3{
+    color: #fff;
+    padding:  30px 0px;
+}
+.info .infoBox div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info .infoBox div span{
+    min-width: 30px;
+    height: 30px;
+    color: #fff;
+    background: #18b7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.info .infoBox div p{
+    color: #fff;
+    font-size: 0.9em;
+}
+.info .infoBox div a{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+.sci{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.sci li{
+    list-style: none;
+    margin-right: 15px;
+}
+
+.sci li a{
+    color: #fff;
+    font-size: 1.5em;
+    color: #ccc;
+    cursor: pointer;
+}
+.sci li a:hover{
+    color: #fff;
+}
+.map{
+    padding: 0;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+  /************************ media - section 3 ************************/
+  
+
+  
+  /************************ media - section 4 ************************/
+  
+  
+  
+  }
+
+

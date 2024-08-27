@@ -1,0 +1,598 @@
+
+/******************************************* section - 1 *************************/
+.prem-sec{
+    height: 15REM;
+    width: 100.2%;
+    position: relative;
+    background-color: #000C2B;
+    text-align: center;
+    z-index: -1;
+    line-height: 9em;
+  }
+  .p1{
+    position: relative;
+    font-size: 60PX;
+    top: 25PX;
+    color: rgb(82, 206, 200);
+  }
+  .soustitle-apropos{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    font-size: 20PX;
+    margin-left: 45%;
+    gap: 15PX;
+    top: 10%;
+    line-height: 100%;
+  }
+  #lien-acceuill{
+    color: rgb(82, 206, 200);
+    text-decoration: none;
+  }
+
+  #lien-acceuill::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(57, 158, 153);
+    transition: all .5s;
+   
+  }
+  #lien-acceuill:hover::before{
+   width: 7%;
+   
+  }
+ 
+  #sous-p{
+    margin-top: -0.3PX;
+    border-left: 2PX solid rgb(82, 206, 200);
+    width: 120PX;
+    color: #93e5e1;
+  }
+
+
+
+   /**************************************** section 2 ************************/
+   .section-2{
+    padding: 20px;
+   background: linear-gradient(90deg,#44bcd1 0%,#44bcd1 30%,#44bcd1 30%,#44bcd1 100%);
+
+   }
+   #title-contact{
+    text-align: center;
+    font-size: 30Px;
+    color: #fff;
+    padding: 10em;
+      }
+   form {
+    width: 500px;
+    margin: 30px auto;
+    padding: 10px;
+   
+    border-radius: 5px;
+    outline: 1.5px solid #ccc;
+    outline-offset: 30px;
+    animation: blink 2s infinite;
+  }
+  @keyframes blink {
+    0% {
+      outline-color: rgb(0, 225, 255);
+    }
+    50% {
+      outline-color: blue;
+    }
+    100% {
+      outline-color: rgb(0, 225, 255);
+    }
+  }
+  
+  /* Form group styling */
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  /* Label styling */
+  
+  label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  /* Input field styling */
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Button styling */
+  
+  .butn {
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* Specific form field styling */
+  
+  #name,
+  #birthday,
+  #phone,
+  #email,
+  #Adresse,
+  #Niveau,
+  #matiere {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .continaire-mat{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  
+  /* Error message styling */
+  
+  .error-message {
+    color: red;
+    font-size: 12px;
+  }
+  
+  /* Radio button styling */
+  
+  .matiere {
+    margin-right: 10px;
+    width: 300px;
+    
+  }
+
+  
+
+/******************************************* section - 3  *************************/
+
+
+  /******************************************************************* media-Query -----  ***************************************************************/
+
+@media (min-width: 300px) {
+
+  /************************ media - section 1 ************************/
+    .prem-sec{
+        height: 15REM;
+        width: 100%;
+        line-height: 9em;
+    }
+    .p1{
+        font-size: 35PX;
+        top: 25PX;
+    }
+    .soustitle-apropos{
+        display: flex;
+        flex-direction: row;
+        font-size: 17PX;
+        top: 10%;
+        line-height: 100%; 
+        margin-left: 40%;
+    }
+    #sous-p{
+        margin-top: -0.3PX;
+        width: 120PX;
+        
+    }
+  
+  
+  /************************ media - section 2 ************************/
+  .section-2{
+    padding: 20px;
+   }
+   #title-contact{
+    font-size: 30Px;
+    padding: 0.3em;
+      }
+   form {
+    width: 250px;
+    margin: 30px auto;
+    padding: 5px;
+   }
+  /* Form group styling */
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  /* Label styling */
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  /* Input field styling */
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Button styling */
+  
+  .butn {
+    padding: 10px 20px;
+    width: 100%;
+  }
+  
+  /* Specific form field styling */
+  
+  #name,
+  #birthday,
+  #phone,
+  #email,
+  #Adresse,
+  #Niveau,
+  #matiere {
+    width: 100%;
+    padding: 10px;
+  }
+  /* Error message styling */
+  
+  .error-message {
+    font-size: 12px;
+  }
+  /* Radio button styling */
+  .matiere {
+    margin-right: 10px;
+    width: 100%;
+    
+  }
+
+  
+  /************************ media - section 3 ************************/
+  
+
+  
+  /************************ media - section 4 ************************/
+
+
+        }
+      
+   
+  
+  @media (min-width: 600px) {
+  
+    /************************ media - section 1 ************************/
+    .prem-sec{
+        height: 15REM;
+        width: 100%;
+        line-height: 9em;
+      }
+      .p1{
+        font-size: 40PX;
+        top: 25PX;
+      }
+      .soustitle-apropos{
+        display: flex;
+        flex-direction: row;
+        font-size: 17PX;
+        top: 10%;
+        line-height: 100%; 
+        margin-left: 40%;
+      }
+    
+      #sous-p{
+        margin-top: -0.3PX;
+        width: 120PX;
+        
+      }
+  
+  
+  /************************ media - section 2 ************************/
+  .section-2{
+    padding: 20px;
+   }
+   #title-contact{
+    font-size: 30Px;
+    padding: 0.3em;
+      }
+   form {
+    width: 350px;
+    margin: 30px auto;
+    padding: 10px;
+   }
+  /* Form group styling */
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  /* Label styling */
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  /* Input field styling */
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Button styling */
+  
+  .butn {
+    padding: 10px 20px;
+    width: 100%;
+  }
+  
+  /* Specific form field styling */
+  
+  #name,
+  #birthday,
+  #phone,
+  #email,
+  #Adresse,
+  #Niveau,
+  #matiere {
+    width: 100%;
+    padding: 10px;
+  }
+  /* Error message styling */
+  
+  .error-message {
+    font-size: 12px;
+  }
+  /* Radio button styling */
+  .matiere {
+    margin-right: 10px;
+    width: 100%;
+    
+  }
+
+  
+  /************************ media - section 3 ************************/
+ 
+
+  
+  /************************ media - section 4 ************************/
+      
+     
+       
+     
+  }
+  
+  @media (min-width: 768px) {
+  
+    /************************ media - section 1 ************************/
+  
+    .prem-sec{
+        height: 15REM;
+        width: 100%;
+        line-height: 9em;
+      }
+    .p1{
+        font-size: 40PX;
+        top: 25PX;
+      }
+    .soustitle-apropos{
+        display: flex;
+        flex-direction: row;
+        font-size: 17PX;
+        top: 10%;
+        line-height: 100%;
+        margin-left: 40%;
+      }
+    
+    #sous-p{
+        margin-top: -0.3PX;
+        width: 120PX;
+        
+      }
+  
+  /************************ media - section 2 ************************/
+  .section-2{
+    padding: 20px;
+   }
+   #title-contact{
+    font-size: 30Px;
+    padding: 0.3em;
+      }
+   form {
+    width: 350px;
+    margin: 30px auto;
+    padding: 10px;
+   }
+  /* Form group styling */
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  /* Label styling */
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  /* Input field styling */
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Button styling */
+  
+  .butn {
+    padding: 10px 20px;
+    width: 100%;
+  }
+  
+  /* Specific form field styling */
+  
+  #name,
+  #birthday,
+  #phone,
+  #email,
+  #Adresse,
+  #Niveau,
+  #matiere {
+    width: 100%;
+    padding: 10px;
+  }
+  /* Error message styling */
+  
+  .error-message {
+    font-size: 12px;
+  }
+  /* Radio button styling */
+  .matiere {
+    margin-right: 10px;
+    width: 100%;
+    
+  }
+
+
+
+  /************************ media - section 3 ************************/
+  
+
+  
+  /************************ media - section 4 ************************/
+
+        
+  
+  
+        
+        
+  
+  
+    }
+  
+  @media (min-width: 1024px) {
+  
+  /************************ media - section 1 ************************/
+  .prem-sec{
+    height: 15REM;
+    width: 100.2%;
+    line-height: 9em;
+  }
+  .p1{
+    font-size: 60PX;
+    top: 25PX;
+  }
+  .soustitle-apropos{
+    display: flex;
+    flex-direction: row;
+    font-size: 20PX;
+    top: 10%;
+    line-height: 100%;
+    margin-left: 40%;
+  }
+
+  #sous-p{
+    margin-top: -0.3PX;
+    width: 120PX;
+    
+  }
+  
+  
+  /************************ media - section 2 ************************/
+  .section-2{
+    padding: 20px;
+   }
+   #title-contact{
+    font-size: 30Px;
+    padding: 0.9em;
+      }
+   form {
+    width: 500px;
+    margin: 30px auto;
+    padding: 10px;
+   }
+  /* Form group styling */
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  /* Label styling */
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  /* Input field styling */
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Button styling */
+  
+  .butn {
+    padding: 10px 20px;
+    width: 100%;
+  }
+  
+  /* Specific form field styling */
+  
+  #name,
+  #birthday,
+  #phone,
+  #email,
+  #Adresse,
+  #Niveau,
+  #matiere {
+    width: 100%;
+    padding: 10px;
+  }
+  /* Error message styling */
+  
+  .error-message {
+    font-size: 12px;
+  }
+  /* Radio button styling */
+  .matiere {
+    margin-right: 10px;
+    width: 100%;
+    
+  }
+
+  
+
+
+
+  /************************ media - section 3 ************************/
+  
+
+  
+  /************************ media - section 4 ************************/
+  
+  
+  
+  }
+
+
